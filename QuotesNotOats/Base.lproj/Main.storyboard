@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Palatino.ttc">
+            <string>Palatino-Bold</string>
+            <string>Palatino-Roman</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuotesNotOats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGF-7P-G9X" userLabel="Author">
+                                <rect key="frame" x="151.5" y="40" width="72" height="31"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="28"/>
+                                <color key="textColor" red="0.2409939236111111" green="0.16557666679422617" blue="0.11833181647320513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skm-oW-z2m" userLabel="Quote">
+                                <rect key="frame" x="20" y="171" width="335" height="31"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="28"/>
+                                <color key="textColor" red="0.2409939236111111" green="0.16557666679422617" blue="0.11833181647320513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-I5-iMT">
+                                <rect key="frame" x="144" y="617" width="87" height="30"/>
+                                <state key="normal" title="Another One">
+                                    <color key="titleColor" red="1" green="0.56040390089217207" blue="0.28502061631944442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="McV-QL-1Ge"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99883010786802029" green="0.96484246081657421" blue="0.94355103010850638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="skm-oW-z2m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="2Xx-m5-9IN"/>
+                            <constraint firstItem="IGF-7P-G9X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="931-Qi-IwQ"/>
+                            <constraint firstItem="skm-oW-z2m" firstAttribute="top" secondItem="IGF-7P-G9X" secondAttribute="bottom" constant="100" id="MrM-s3-iOQ"/>
+                            <constraint firstItem="skm-oW-z2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SHR-nF-r22"/>
+                            <constraint firstItem="IGF-7P-G9X" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dns-Kt-ffZ"/>
+                            <constraint firstItem="skm-oW-z2m" firstAttribute="centerX" secondItem="IGF-7P-G9X" secondAttribute="centerX" id="eOE-rW-uL7"/>
+                            <constraint firstItem="Agn-I5-iMT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gUg-kr-wg7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Agn-I5-iMT" secondAttribute="bottom" constant="20" id="nCu-ut-SVF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="p02-0I-ogb"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="IGF-7P-G9X" id="lBW-kV-mop"/>
+                        <outlet property="quoteLabel" destination="skm-oW-z2m" id="czC-m6-t0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="476" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>
