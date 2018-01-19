@@ -21,9 +21,14 @@ class QuoteFetcher {
         let request = URLRequest(url: url)
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard error == nil else {
+                completion(nil)
+                return
+            }
             if let data = data {
                 let quote = try? JSONDecoder().decode(Quote.self, from: data)
                 completion(quote)
+                return
             }
         }
         
