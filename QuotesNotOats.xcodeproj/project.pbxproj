@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842AC2DB20120C94007DF035 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AC2DA20120C94007DF035 /* Quote.swift */; };
+		842AC2DD20120CDF007DF035 /* QuoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AC2DC20120CDF007DF035 /* QuoteFetcher.swift */; };
 		84BF9DFC200F29A9000E2C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF9DFB200F29A9000E2C5F /* AppDelegate.swift */; };
 		84BF9DFE200F29A9000E2C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF9DFD200F29A9000E2C5F /* ViewController.swift */; };
 		84BF9E01200F29A9000E2C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BF9DFF200F29A9000E2C5F /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842AC2DA20120C94007DF035 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		842AC2DC20120CDF007DF035 /* QuoteFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteFetcher.swift; sourceTree = "<group>"; };
 		84BF9DF8200F29A9000E2C5F /* QuotesNotOats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotesNotOats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BF9DFB200F29A9000E2C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BF9DFD200F29A9000E2C5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				84BF9DFB200F29A9000E2C5F /* AppDelegate.swift */,
 				84BF9DFD200F29A9000E2C5F /* ViewController.swift */,
+				842AC2DC20120CDF007DF035 /* QuoteFetcher.swift */,
+				842AC2DA20120C94007DF035 /* Quote.swift */,
 				84BF9DFF200F29A9000E2C5F /* Main.storyboard */,
 				84BF9E02200F29A9000E2C5F /* Assets.xcassets */,
 				84BF9E04200F29A9000E2C5F /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842AC2DD20120CDF007DF035 /* QuoteFetcher.swift in Sources */,
 				84BF9DFE200F29A9000E2C5F /* ViewController.swift in Sources */,
+				842AC2DB20120C94007DF035 /* Quote.swift in Sources */,
 				84BF9DFC200F29A9000E2C5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
